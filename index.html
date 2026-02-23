@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rahul Raj | Java Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+    <div id="loader" class="loader-container">
+        <div class="loader"></div>
+        <p>Loading portfolio...</p>
+    </div>
+    <div id="error-message" class="error-container hidden">
+        <p>⚠ Failed to load portfolio data. Please try again later.</p>
+    </div> <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo"> <span id="nav-name">Rahul</span> Raj </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav> <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <div class="container hero-content"> <span class="badge">Full Stack Java Developer</span>
+            <h1 id="profile-name">Loading...</h1>
+            <p class="hero-subtitle" id="profile-title"> Loading title... </p>
+            <div class="hero-buttons"> <a href="#" target="_blank" class="btn-primary" id="github-btn"> GitHub </a> <a
+                    href="#" target="_blank" class="btn-secondary" id="linkedin-btn"> LinkedIn </a> </div>
+        </div>
+    </section> <!-- ===== ABOUT ===== -->
+    <section id="about" class="section ">
+        <div class="container">
+            <h2 class="section-title"> <span>01.</span> About Me </h2>
+            <div class="glass-card about-card">
+                <p id="profile-bio" class="about-bio"> Loading bio... </p>
+                <div class="about-contact"> <span class="contact-label">Email:</span> <a href="#" id="profile-email"
+                        class="contact-link"></a> </div>
+            </div>
+        </div>
+    </section> <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section ">
+        <div class="container">
+            <h2 class="section-title"> <span>02.</span> Skills </h2>
+            <div class="grid" id="skills-container"> <!-- Skills will be injected here --> </div>
+        </div>
+    </section> <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section ">
+        <div class="container">
+            <h2 class="section-title"> <span>03.</span> Projects </h2>
+            <div class="grid" id="projects-container"> <!-- Projects will be injected here --> </div>
+        </div>
+    </section> <!-- JS FILE -->
+    <script src="ui.js"></script>
+</body>
+
+</html>
