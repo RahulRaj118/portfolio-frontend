@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("profile-name").textContent = profile.name;
     document.getElementById("profile-title").textContent = profile.title;
     document.getElementById("profile-bio").textContent = profile.bio;
-    document.getElementById("profile-email").textContent = profile.email;
+   const emailElement = document.getElementById("profile-email");
+  emailElement.textContent = profile.email;
+  emailElement.href = `mailto:${profile.email}?subject=Opportunity%20Discussion`;
 
     document.getElementById("github-btn").href = profile.githubUrl;
     document.getElementById("linkedin-btn").href = profile.linkedInUrl;
